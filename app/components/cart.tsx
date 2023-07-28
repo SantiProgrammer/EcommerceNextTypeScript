@@ -1,23 +1,15 @@
 "use client";
 
-import { useGlobalContext } from "../context/store";
 import Swal from "sweetalert2";
-import { useEffect } from "react";
+import { useGlobalContext } from "../context/store";
 
 function Cart() {
-  const { clearCart, data, deleteProduct } = useGlobalContext();
+  const { clearCart, data, deleteProduct, setData } = useGlobalContext();
 
-  useEffect(() => {
-    data;
-  }, []);
-
-  /*  const onAdd = (qty: any) => {
-    Swal.fire({
-      icon: "success",
-      title: `Producto de prueba Cantidad:${qty}`,
-    });
-    addProduct("Producto de prueba", qty);
-  }; */
+  /*   if (data?) {
+    const data = JSON.parse(localStorage.getItem("cart"));
+    setData(data);
+  } */
 
   const emptyCart = () => {
     Swal.fire({
@@ -78,14 +70,14 @@ function Cart() {
                     </div>
                     <div className="col-md-6">
                       <div className="card-detalle">
-                        <p className="card-title">${e.item} </p>
+                        <p className="card-title">${e.price} </p>
                         <p className="card-text">Cant: ${e.qty}</p>
-                        <p className="card-text">Total: $ ${e.id}</p>
+                        <p className="card-text">Total:${e.price * e.qty}</p>
                       </div>
                     </div>
                     <div className="col-md-3 d-flex">
                       <button onClick={() => handleDeleteProduct(e.id)}>
-                        Eliminar
+                        X
                       </button>
                     </div>
                   </div>

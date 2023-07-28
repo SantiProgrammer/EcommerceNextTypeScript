@@ -55,6 +55,7 @@ export const GlobalContextProvider = ({ children }) => {
     price: number
   ) => {
     setData([...data, { item, qty, image, id, price }]);
+    localStorage.setItem("cart", JSON.stringify(data));
   };
 
   const clearCart = () => {

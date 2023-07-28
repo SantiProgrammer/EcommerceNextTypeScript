@@ -60,9 +60,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="col-md-3 d-flex">
-                    <button onClick={() => handleDeleteProduct(e.id)}>
-                      Eliminar
-                    </button>
+                    <button onClick={() => handleDeleteProduct(e.id)}>X</button>
                   </div>
                 </div>
               </div>
