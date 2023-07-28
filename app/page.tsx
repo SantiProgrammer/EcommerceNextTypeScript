@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <div className="home-row">
               {products ? (
-                <Products products={products.slice(0, 4)} />
+                <Products products={products.slice(4, 8)} />
               ) : (
                 <p>Loading...</p>
               )}
