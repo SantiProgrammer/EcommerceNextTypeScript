@@ -20,12 +20,6 @@ _Run:_
 git clone https://github.com/SantiagoMorera/eCommer-next-typescript
 ```
 
-_To run the project:_
-
-```bash
-npm run dev
-```
-
 ## Prerequisites 📋
 
 _Required programs:_
@@ -42,6 +36,12 @@ _Open project in project folder in VScode_
 
 ```
 cd location/of/project code .
+```
+
+_To run the project:_
+
+```bash
+npm run dev
 ```
 
 _Happy coding 🚀_
