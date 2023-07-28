@@ -20,6 +20,12 @@ _Run:_
 git clone https://github.com/SantiagoMorera/eCommer-next-typescript
 ```
 
+_To run the project:_
+
+```bash
+npm run dev
+```
+
 ## Prerequisites 📋
 
 _Required programs:_
