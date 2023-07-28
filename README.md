@@ -1,10 +1,10 @@
-# Landing page template
+# eCommerce Challenge
 
 _This is a eCommerce challenge made in 2 days_
 
 # To improve
 
-_I spent two days doing this challenge in my free time, but I ran out of time, I need to show the total number of products in the cart and improve the responsive css, without a doubt with a little more time I could make any improvement._
+_I spent two days doing this challenge in my free time, but I ran out of time, I need to show the total price of products list in the cart and improve the responsive css, without a doubt with a little more time I could make any improvement._
 
 ## Screenshot
 
