@@ -1,0 +1,73 @@
+/* item-detail */
+
+.title-detalles {
+  font-size: 40px;
+  margin: 50px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s;
+
+  img {
+    margin: 30px;
+    width: 45%;
+    border-radius: 15px;
+  }
+}
+
+.detail-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  padding: 40px;
+
+  h2 {
+    margin: 10px;
+    font-size: 25px;
+    animation: fadeInDown .6s;
+  }
+}
+
+.precio {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.description {
+  margin: 10px;
+}
+
+.stock {
+  margin: 10px;
+}
+
+.check-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(49, 59, 69, 0.7);
+  margin: 51px;
+  border: none;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(49, 59, 69, 1);
+  }
+}

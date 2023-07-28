@@ -1,0 +1,136 @@
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    .product-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 250px;
+        height: 350px;
+        background-color: rgba(214, 214, 214, 0.1);
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+        cursor: pointer;
+
+        .product-title {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 300;
+
+        }
+
+        .product-image {
+            width: 140px;
+            max-height: 160px;
+            border-radius: 10px;
+
+        }
+
+    }
+
+    .product-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        border-radius: 15px;
+        padding: 20px;
+
+
+        .price {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .freeShipping {
+            color: #00a650;
+            font-size: 12px;
+            font-weight: 300;
+
+            .ray-geen {
+                width: 25px;
+                margin-right: -5px;
+            }
+
+
+            span {
+                font-weight: 900;
+                font-size: 12px;
+            }
+
+        }
+
+
+    }
+}
+
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 900px;
+
+
+    h2 {
+        color: black;
+        text-align: center;
+    }
+
+
+    .detail-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: black;
+
+
+
+        .detail-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 40%;
+            margin: 20px;
+
+
+            .detail-img {
+                width: 200px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.freeShipping {
+    color: #00a650;
+    font-size: 12px;
+    font-weight: 300;
+
+    .ray-geen {
+        width: 25px;
+        margin-right: -5px;
+    }
+
+
+    span {
+        font-weight: 900;
+        font-size: 12px;
+    }
+
+}

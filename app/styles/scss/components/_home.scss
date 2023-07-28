@@ -1,0 +1,40 @@
+.home-image {
+    max-width: 40%;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .home-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: #fff159 !important;
+
+    a {
+        color: rgb(43, 43, 43);
+        padding: 10px;
+
+
+        &:hover {
+            color: rgb(0, 0, 0);
+        }
+    }
+}

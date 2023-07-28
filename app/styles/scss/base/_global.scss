@@ -1,0 +1,30 @@
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.div-animation {
+    animation: fadeInUp .5s;
+}
+
+h2 {
+    margin-top: 60px;
+}
