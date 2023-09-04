@@ -6,6 +6,7 @@ import {
   Dispatch,
   SetStateAction,
   useState,
+  useEffect,
 } from "react";
 
 type DataType = {
@@ -55,7 +56,7 @@ export const GlobalContextProvider = ({ children }) => {
     price: number
   ) => {
     setData([...data, { item, qty, image, id, price }]);
-    localStorage.setItem("cart", JSON.stringify(data));
+    localStorage.setItem("Cart", JSON.stringify(data));
   };
 
   const clearCart = () => {

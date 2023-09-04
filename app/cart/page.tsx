@@ -3,7 +3,9 @@ import Swal from "sweetalert2";
 import { useGlobalContext } from "../context/store";
 
 const Cart = () => {
-  const { data, deleteProduct, clearCart } = useGlobalContext();
+  const { data, deleteProduct, clearCart, setData } = useGlobalContext();
+
+  /* localStorage.setItem("Cart", JSON.stringify(data)); */
 
   const handleDeleteProduct = (productId: number) => {
     deleteProduct(productId);
@@ -55,7 +57,7 @@ const Cart = () => {
                   <div className="col-md-6">
                     <div className="card-detalle">
                       <p className="card-title">${e.price} </p>
-                      <p className="card-text">Cant: ${e.qty}</p>
+                      <p className="card-text">Cant: {e.qty}</p>
                       <p className="card-text">Total:${e.price * e.qty}</p>
                     </div>
                   </div>

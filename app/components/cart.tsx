@@ -71,7 +71,7 @@ function Cart() {
                     <div className="col-md-6">
                       <div className="card-detalle">
                         <p className="card-title">${e.price} </p>
-                        <p className="card-text">Cant: ${e.qty}</p>
+                        <p className="card-text">Cant: {e.qty}</p>
                         <p className="card-text">Total:${e.price * e.qty}</p>
                       </div>
                     </div>
